@@ -39,7 +39,7 @@ always @(posedge clk or negedge Rst_tx) begin
                 tx_reg <= 1;
                 if (Start_edge) begin
                     r_data <= data;
-                    tx_reg <= 0; // Start bit
+                    tx_reg <= 0; 
                     bit_cnt <= 1;
                     state_reg <= state1;
                 end
